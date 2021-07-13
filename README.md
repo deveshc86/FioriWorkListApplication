@@ -1,2 +1,3 @@
 # FioriWorkListApplication
-This is a test SAP Fiori Worklist application 
+This is a test SAP Fiori Worklist application
+
