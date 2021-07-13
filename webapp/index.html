@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-resourceroots='{
+					"accenture.fin.ar":"./"
+				}'
+				data-sap-ui-xx-bindingSyntax="complex"
+		></script>
+	
+	<!-- Now we will create a Component Container Object for Component.js
+	This is done just for testing. In actual app, no coupling between index.html and Component.js.
+	In fact, no index.html file in actual app-->
+	<script>
+	var oCompContainer = new sap.ui.core.ComponentContainer({
+		name:"accenture.fin.ar"
+		
+	});
+	oCompContainer.placeAt("content")
+	</script>
+	
+    </head>
+    <body class='sapUiBody'>
+    	<div id="content"></div>
+    </body>
+</html>

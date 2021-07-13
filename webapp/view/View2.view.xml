@@ -1,0 +1,49 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:t="sap.ui.table"
+
+controllerName="accenture.fin.ar.controller.View2"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+			<Page title="View2" showNavButton="true" navButtonPress="onBack">
+				<headerContent></headerContent>
+				<content>
+					<f:SimpleForm editable="true">
+				        <f:content>
+							<Label text="Team Name"></Label>
+							<Input id="idInput1" value="{/team/0/teamName}"></Input>
+							<Label text="Captain Name"></Label>
+							<Input id="idInput2" value="{/team/0/captainName}"></Input>
+							<Label text="T-shirt Color"></Label>
+							<Input id="idInput3" value="{/team/0/tshirtColor}"></Input>
+				        </f:content>
+			        </f:SimpleForm>
+			        <Button text="Add" press="onAdd"></Button>
+			        <t:Table  id="idTable" title="Team Table">
+			        	<t:columns>
+			        		<t:Column label="Team Name">
+			        			<t:template>
+			        				<Text id="idTeamName"></Text>
+			        		    </t:template>
+			        		</t:Column>
+			        		
+			        		<t:Column label="Captain Name">
+			        			<t:template>
+			        				<Text id="idCaptainName"></Text>
+			        		    </t:template>
+			        		</t:Column>
+			        		
+			        		<t:Column label="T-shirt Color">
+			        			<t:template>
+			        				<Text id="idTshirtColor"></Text>
+			        		    </t:template>
+			        		</t:Column>
+			        	</t:columns>
+			        </t:Table>
+				</content>
+				<footer>
+					<Toolbar>
+						<ToolbarSpacer></ToolbarSpacer>
+						<Button text="Save" type="Accept"></Button>
+						<Button text="Cancel" type="Reject"></Button>
+					</Toolbar>
+				</footer>
+			</Page>
+</mvc:View>
